@@ -5,7 +5,7 @@
  * Description: checks if a character is lowercase.
  */
 
-void _islower(int c)
+int _islower(int c)
 {
 if (c <= 122 && c >= 97)
 {
