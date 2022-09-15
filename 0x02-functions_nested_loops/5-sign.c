@@ -19,7 +19,7 @@ else if (n < -1)
 _putchar('-');
 return (-1);
 }
-else (n == 0)
+else
 {
 _putchar('0');
 return (0);
