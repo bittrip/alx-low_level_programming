@@ -7,7 +7,7 @@
  * Return: 1, if c is an alphabet, 0 if c is not an alphabet
  */
 
-int _isapha(int c)
+int _isalpha(int c)
 {
 if (c <= 'z' && c >= 'a' && c >= 'A' && c <= 'Z')
 {
