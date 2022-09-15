@@ -3,7 +3,6 @@
 /**
  * print_alphabet - prints the alphabet in lowercase.
  * Description: prints the alphabet in lowercase to screen.
- * Return: 0, if successful.
  */
 
 void print_alphabet(void)
