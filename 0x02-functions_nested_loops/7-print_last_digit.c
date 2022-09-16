@@ -7,7 +7,7 @@
  * Return: last digit of a number.
  */
 
-int _abs(int n)
+int print_last_digit(int n)
 {
 int nl;
 nl = n % 10;
