@@ -1,6 +1,4 @@
 #include "main.h"
-#define MINUTE_MAX "60"
-#define HOUR_MAX "24"
 
 /**
  * jack_bauer - prints every minute of Jack Bauer's day starting from 00:00 to 23:59
@@ -9,8 +7,10 @@
 
 void jack_bauer(void)
 {
-int minute;
-int hour;
+char minute_max = "60";
+char hour_max = "24";
+char minute;
+char hour;
 for (hour = '0'; hour < HOUR_MAX; hour++)
 {
 for (minute = '0'; minute < MINUTE_MAX; minute++)
