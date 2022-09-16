@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* jack_bauer - prints every minute of 
+* jack_bauer - prints every minute of
 * Jack Bauer's day starting from 00:00 to 23:59
-* Description: prints every minute of 
+* Description: prints every minute of
 * Jack Bauer's day starting from 00:00 to 23:59 to screen.
 */
 
