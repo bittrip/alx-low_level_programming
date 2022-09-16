@@ -1,52 +1,47 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints every minute of Jack Bauer's day starting from 00:00 to 23:59
- * Description: prints every minute of Jack Bauer's day starting from 00:00 to 23:59 to screen.
- */
+* jack_bauer - prints every minute of Jack Bauer's day starting from 00:00 to 23:59
+* Description: prints every minute of Jack Bauer's day starting from 00:00 to 23:59 to screen.
+*/
 
 void jack_bauer(void)
 {
-char minute_max = "60";
-char hour_max = "24";
-char minute;
-char hour;
-for (hour = '0'; hour < HOUR_MAX; hour++)
+int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
+
+hours_max = 58;
+hours_tens = '0';
+while (hours_tens < '3')
 {
-for (minute = '0'; minute < MINUTE_MAX; minute++)
+if (hours_tens == '2')
 {
-if (minute < "10" && hour < "10")
+hours_max = '4';
+}
+hours_ones = '0';
+while (hours_ones < hours_max)
 {
-_putchar('0');
-_putchar(hour);
+minutes_tens = '0';
+while (minutes_tens < '6')
+{
+minutes_ones = '0';
+while (minutes_ones < 58)
+{
+_putchar(hours_tens);
+_putchar(hours_ones);
 _putchar(':');
-_putchar('0');
-_putchar(minute);
+_putchar(minutes_tens);
+_putchar(minutes_ones);
 _putchar('\n');
+minutes_ones++;
 }
-else if (minute > "10" && hour < "10")
-{
-_putchar('0');
-_putchar(hour);
-_putchar(':');
-_putchar(minute);
-_putchar('\n');
+minutes_ones = '0';
+minutes_tens++;
 }
-else if (minute < "10" && hour > "10")
-{
-_putchar(hour);
-_putchar(':');
-_putchar('0');
-_putchar(minute);
-_putchar('\n');
+minutes_tens = '0';
+hours_ones++;
 }
-else
-{
-_putchar(hour);
-_putchar(':');
-_putchar(minute);
-_putchar('\n');
+hours_ones = '0';
+hours_tens++;
 }
 }
-}
-}
+
