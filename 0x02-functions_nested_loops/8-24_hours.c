@@ -18,26 +18,26 @@ for (minute=0; minute < MINUTE_MAX; minute++)
 if (minute < 10 && hour < 10)
 {
 _putchar('0');
-_putchar(minute);
+_putchar(minute+48);
 _putchar(':');
 _putchar('0');
-_putchar(hour);
+_putchar(hour+48);
 _putchar('\n');
 }
 else if (minute > 10 && hour < 10)
 {
-_putchar(minute);
+_putchar(minute+48);
 _putchar(':');
 _putchar('0');
-_putchar(hour);
+_putchar(hour+48);
 _putchar('\n');
 }
 else
 {
 _putchar('0');
-_putchar(minute);
+_putchar(minute+48);
 _putchar(':');
-_putchar(hour);
+_putchar(hour+48);
 _putchar('\n');
 }
 }
