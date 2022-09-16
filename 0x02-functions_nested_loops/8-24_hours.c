@@ -1,6 +1,6 @@
 #include "main.h"
-#define MINUTE_MAX '60'
-#define HOUR_MAX '24'
+#define MINUTE_MAX "60"
+#define HOUR_MAX "24"
 
 /**
  * jack_bauer - prints every minute of Jack Bauer's day starting from 00:00 to 23:59
@@ -15,7 +15,7 @@ for (hour = '0'; hour < HOUR_MAX; hour++)
 {
 for (minute = '0'; minute < MINUTE_MAX; minute++)
 {
-if (minute < '10' && hour < '10')
+if (minute < "10" && hour < "10")
 {
 _putchar('0');
 _putchar(hour);
@@ -24,7 +24,7 @@ _putchar('0');
 _putchar(minute);
 _putchar('\n');
 }
-else if (minute > '10' && hour < '10')
+else if (minute > "10" && hour < "10")
 {
 _putchar('0');
 _putchar(hour);
@@ -32,7 +32,7 @@ _putchar(':');
 _putchar(minute);
 _putchar('\n');
 }
-else if (minute < '10' && hour > '10')
+else if (minute < "10" && hour > "10")
 {
 _putchar(hour);
 _putchar(':');
