@@ -9,11 +9,11 @@
 
 void jack_bauer(void)
 {
-int minute
-int hour
-for (hour = 0; hour < HOUR_MAX, hour++)
+int minute;
+int hour;
+for (hour = 0; hour < HOUR_MAX;, hour++)
 {
-for (minute=0; minute < MINUTE_MAX, minute++)
+for (minute=0; minute < MINUTE_MAX;, minute++)
 {
 if (minute < 10 && hour < 10)
 {
